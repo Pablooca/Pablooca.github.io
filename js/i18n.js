@@ -60,7 +60,7 @@
       'talks.pyes.desc': 'Part of the Spanish Python community, supporting events, knowledge sharing and open-source culture.',
       'talks.esoliupo.title': 'President of ESOLIUPO',
       'talks.esoliupo.sub': 'Free Software Students’ Association, Universidad Pablo de Olavide',
-      'talks.esoliupo.desc': 'Organised the 9th and 10th editions of the <em>Jornadas Ingenieros en la UPO</em> and coordinated hands-on technical workshops.',
+      'talks.esoliupo.desc': 'Organised the 8th and 9th editions of the <em>Jornadas Ingenieros en la UPO</em> and coordinated hands-on technical workshops.',
       'talks.esoliupo.tagSec': 'Cybersecurity',
 
       'projects.title': 'Featured Work &amp; Research',
@@ -173,7 +173,7 @@
       'talks.pyes.desc': 'Parte de la comunidad Python española, apoyando eventos, la difusión de conocimiento y la cultura open-source.',
       'talks.esoliupo.title': 'Presidente de ESOLIUPO',
       'talks.esoliupo.sub': 'Asociación de Estudiantes de Software Libre de la Universidad Pablo de Olavide',
-      'talks.esoliupo.desc': 'Organización de las IX y X <em>Jornadas Ingenieros en la UPO</em> y coordinación de talleres técnicos prácticos.',
+      'talks.esoliupo.desc': 'Organización de las VIII y IX <em>Jornadas Ingenieros en la UPO</em> y coordinación de talleres técnicos prácticos.',
       'talks.esoliupo.tagSec': 'Ciberseguridad',
 
       'projects.title': 'Proyectos e Investigación Destacados',
