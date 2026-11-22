@@ -1,0 +1,6 @@
+.DS_Store
+*.HEIC
+*.heic
+.vscode/
+.idea/
+node_modules/
