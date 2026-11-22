@@ -10,7 +10,7 @@
   <meta name="author" content="Pablo Oca Galeano" />
   <meta name="keywords" content="Pablo Oca Galeano, Software Engineer, HPC, High-Performance Computing, AI, Artificial Intelligence, Data Engineer, Bioinformatics, CUDA, Numba, Cython, Java, Spring Boot, Kafka, Python, PyConES 2026, Seville, Finland" />
   <meta name="robots" content="index, follow" />
-  <meta name="theme-color" content="#0a0c10" />
+  <meta name="theme-color" content="#0D0F12" />
   <link rel="canonical" href="https://pablooca.github.io/" />
   <link rel="alternate" hreflang="en" href="https://pablooca.github.io/" />
   <link rel="alternate" hreflang="es" href="https://pablooca.github.io/?lang=es" />
@@ -59,7 +59,7 @@
   </script>
 
   <!-- Favicon (inline SVG) -->
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a0c10'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='monospace' font-weight='700' font-size='28' fill='%237dd3fc'%3EPO%3C/text%3E%3C/svg%3E" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='6' fill='%230D0F12'/%3E%3Ctext x='50%25' y='56%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia,serif' font-style='italic' font-size='34' fill='%23EAECEF'%3Ep%3C/text%3E%3Crect x='40' y='44' width='8' height='4' fill='%23E08E45'/%3E%3C/svg%3E" />
 
   <!-- Apply saved theme / language before paint to avoid flashes -->
   <script>
@@ -75,10 +75,10 @@
     })();
   </script>
 
-  <!-- Fonts -->
+  <!-- Fonts: Instrument Serif (display) · Plus Jakarta Sans (body) · JetBrains Mono (meta) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="./css/styles.css" />
 </head>
@@ -90,23 +90,22 @@
   <header class="nav" id="nav">
     <div class="container nav__inner">
       <a href="#top" class="nav__brand" aria-label="Pablo Oca Galeano — home">
-        <span class="nav__logo">PO</span>
-        <span class="nav__name">Pablo Oca</span>
+        <span class="nav__mark" aria-hidden="true">p<span>_</span></span>
+        <span class="nav__name">Pablo Oca Galeano</span>
       </a>
 
       <nav class="nav__links" id="nav-links" aria-label="Primary">
-        <a href="#experience" data-i18n="nav.experience">Experience</a>
-        <a href="#education" data-i18n="nav.education">Education</a>
-        <a href="#talks" data-i18n="nav.talks">Talks</a>
-        <a href="#projects" data-i18n="nav.projects">Projects</a>
-        <a href="#stack" data-i18n="nav.stack">Stack</a>
-        <a href="#beyond" data-i18n="nav.beyond">Beyond</a>
+        <a href="#experience"><span class="nav__num" aria-hidden="true">01</span><span data-i18n="nav.experience">Experience</span></a>
+        <a href="#education"><span class="nav__num" aria-hidden="true">02</span><span data-i18n="nav.education">Education</span></a>
+        <a href="#work"><span class="nav__num" aria-hidden="true">03</span><span data-i18n="nav.work">Work</span></a>
+        <a href="#stack"><span class="nav__num" aria-hidden="true">04</span><span data-i18n="nav.stack">Stack</span></a>
+        <a href="#beyond"><span class="nav__num" aria-hidden="true">05</span><span data-i18n="nav.beyond">Beyond</span></a>
       </nav>
 
       <div class="nav__controls">
         <div class="lang-switch" role="group" aria-label="Language" data-i18n-attr="aria-label:a11y.language">
           <button type="button" class="lang-switch__btn" data-lang="en" aria-pressed="true">EN</button>
-          <span class="lang-switch__sep" aria-hidden="true">|</span>
+          <span class="lang-switch__sep" aria-hidden="true">/</span>
           <button type="button" class="lang-switch__btn" data-lang="es" aria-pressed="false">ES</button>
         </div>
 
@@ -116,66 +115,88 @@
         </button>
 
         <button type="button" class="icon-btn nav__burger" id="nav-burger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links" data-i18n-attr="aria-label:a11y.menu">
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg>
         </button>
       </div>
     </div>
   </header>
 
   <main id="main">
-    <!-- ============================== HERO ============================== -->
+    <!-- ============================== HERO (split 65 / 35) ============================== -->
     <section class="hero" id="top">
-      <div class="hero__grid-bg" aria-hidden="true"></div>
-      <div class="container hero__inner">
-        <p class="eyebrow reveal">
-          <span class="status-dot" aria-hidden="true"></span>
-          <span data-i18n="hero.location">Seville, Spain · Open to opportunities in the Nordics</span>
-        </p>
+      <div class="container hero__grid">
+        <div class="hero__main">
+          <p class="hero__tag label reveal">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span data-i18n="hero.location">Seville, ES // Open to Nordic &amp; AI roles</span>
+          </p>
 
-        <h1 class="hero__title reveal">Pablo Oca Galeano</h1>
+          <h1 class="hero__title reveal">Pablo Oca<br /><em>Galeano</em></h1>
 
-        <p class="hero__roles mono reveal">
-          <span>Software Engineer</span><span class="hero__sep" aria-hidden="true">/</span><span data-i18n="hero.role2">AI &amp; HPC Researcher</span><span class="hero__sep" aria-hidden="true">/</span><span data-i18n="hero.role3">Data Engineer</span>
-        </p>
+          <p class="hero__roles label reveal">
+            <span>Software Engineer</span><span class="hero__sep" aria-hidden="true">·</span><span data-i18n="hero.role2">AI &amp; HPC Researcher</span><span class="hero__sep" aria-hidden="true">·</span><span data-i18n="hero.role3">Data Engineer</span>
+          </p>
 
-        <p class="hero__lead reveal" data-i18n="hero.lead">
-          I build at the intersection of <strong>scalable software engineering</strong>, <strong>High-Performance Computing</strong> and <strong>Artificial Intelligence applied to biomedicine</strong> — from cloud-native microservices in production to GPU-accelerated genomics on supercomputers.
-        </p>
+          <p class="hero__lead reveal" data-i18n="hero.lead">
+            I build at the intersection of <strong>scalable software engineering</strong>, <strong>High-Performance Computing</strong> and <strong>Artificial Intelligence applied to biomedicine</strong> — from cloud-native microservices in production to GPU-accelerated genomics on supercomputers.
+          </p>
 
-        <div class="hero__ctas reveal">
-          <a href="#projects" class="btn btn--primary">
-            <span data-i18n="hero.ctaProjects">View Projects</span>
-            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </a>
-          <a href="#talks" class="btn btn--ghost" data-i18n="hero.ctaTalks">Talks &amp; Publications</a>
-          <div class="hero__social">
-            <a href="https://github.com/Pablooca" class="icon-btn icon-btn--lg" target="_blank" rel="noopener noreferrer" aria-label="GitHub — Pablooca">
-              <svg class="icon icon--fill" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12.3c0 5.2 3.3 9.6 7.9 11.2.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.6-3.9-1.6-.5-1.4-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.5-2.7 5.5-5.3 5.8.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6a11.8 11.8 0 0 0 7.9-11.2A11.5 11.5 0 0 0 12 .5z"/></svg>
+          <div class="hero__actions reveal">
+            <a href="#work" class="btn btn--solid">
+              <span data-i18n="hero.ctaProjects">View Projects</span>
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
             </a>
-            <a href="https://www.linkedin.com/in/pablo-oca/" class="icon-btn icon-btn--lg" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn — pablo-oca">
+            <a href="#talk" class="btn btn--line" data-i18n="hero.ctaTalks">Talks &amp; Publications</a>
+            <span class="hero__divider" aria-hidden="true"></span>
+            <a href="https://github.com/Pablooca" class="text-link label" target="_blank" rel="noopener noreferrer">
+              <svg class="icon icon--fill" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12.3c0 5.2 3.3 9.6 7.9 11.2.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.6-3.9-1.6-.5-1.4-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.5-2.7 5.5-5.3 5.8.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6a11.8 11.8 0 0 0 7.9-11.2A11.5 11.5 0 0 0 12 .5z"/></svg>
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/pablo-oca/" class="text-link label" target="_blank" rel="noopener noreferrer">
               <svg class="icon icon--fill" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+              LinkedIn
             </a>
           </div>
         </div>
 
-        <dl class="hero__stats reveal">
-          <div class="stat">
-            <dt class="mono" data-i18n="hero.stat1Label">Thesis grade</dt>
-            <dd>10<span class="stat__unit">/10</span></dd>
-          </div>
-          <div class="stat">
-            <dt class="mono" data-i18n="hero.stat2Label">Speaker</dt>
-            <dd>PyConES<span class="stat__unit">’26</span></dd>
-          </div>
-          <div class="stat">
-            <dt class="mono" data-i18n="hero.stat3Label">Compute</dt>
-            <dd>CPU<span class="stat__unit">+</span>GPU</dd>
-          </div>
-          <div class="stat">
-            <dt class="mono" data-i18n="hero.stat4Label">Countries lived</dt>
-            <dd>ES<span class="stat__unit">·</span>FI</dd>
-          </div>
-        </dl>
+        <!-- Spec sheet -->
+        <aside class="spec reveal" aria-labelledby="spec-title">
+          <header class="spec__head label">
+            <span id="spec-title">SYSTEM_PROFILE</span>
+            <span class="spec__status"><span class="status-dot" aria-hidden="true"></span><span data-i18n="spec.status">Online</span></span>
+          </header>
+          <dl class="spec__table">
+            <div class="spec__row">
+              <dt class="label" data-i18n="spec.role.label">Role</dt>
+              <dd data-i18n="spec.role.value">Software Engineer @ NTT Data</dd>
+            </div>
+            <div class="spec__row">
+              <dt class="label" data-i18n="spec.research.label">Research</dt>
+              <dd>SynergIA Lab · UPO</dd>
+            </div>
+            <div class="spec__row">
+              <dt class="label" data-i18n="spec.focus.label">Current focus</dt>
+              <dd data-i18n="spec.focus.value">HPC · Biomedical AI · Cloud-native systems</dd>
+            </div>
+            <div class="spec__row">
+              <dt class="label" data-i18n="spec.hpc.label">HPC environment</dt>
+              <dd>CICA Hércules <span class="muted">/ Slurm</span></dd>
+            </div>
+            <div class="spec__row">
+              <dt class="label" data-i18n="spec.academic.label">Academic track</dt>
+              <dd data-i18n="spec.academic.value">M.Sc. AI &amp; PhD prep</dd>
+            </div>
+            <div class="spec__row">
+              <dt class="label" data-i18n="spec.languages.label">Languages</dt>
+              <dd>ES / EN C1 / DE A2</dd>
+            </div>
+          </dl>
+          <footer class="spec__foot label">
+            <span><span data-i18n="spec.thesis">Thesis</span> <strong>10/10</strong></span>
+            <span>PyConES ’26</span>
+            <span>ES ⇄ FI</span>
+          </footer>
+        </aside>
       </div>
     </section>
 
@@ -183,38 +204,38 @@
     <section class="section" id="experience" aria-labelledby="experience-title">
       <div class="container">
         <header class="section__head reveal">
-          <span class="section__index mono">01</span>
+          <p class="label section__index">§ 01</p>
           <h2 id="experience-title" data-i18n="experience.title">Experience &amp; Research</h2>
         </header>
 
-        <ol class="timeline">
-          <li class="timeline__item reveal">
-            <div class="timeline__meta mono">
+        <ol class="index">
+          <li class="index__row reveal">
+            <div class="index__meta label">
               <span data-i18n="experience.ntt.date">Dec 2025 — Present</span>
-              <span class="timeline__place" data-i18n="common.seville">Seville, Spain</span>
+              <span class="muted" data-i18n="common.seville">Seville, Spain</span>
             </div>
-            <article class="card">
-              <h3 class="card__title">Junior Software Engineer <span class="at">@ NTT Data</span></h3>
+            <div class="index__body">
+              <h3 class="index__title">Junior Software Engineer <span class="at">— NTT Data</span></h3>
               <p data-i18n="experience.ntt.desc">Development of cloud-native microservices with Java and Spring Boot, business-process automation with Camunda BPMN, SQL databases, and deployment on Azure and Kubernetes within agile teams.</p>
-              <ul class="tags" aria-label="Technologies">
+              <ul class="dotlist label" aria-label="Technologies">
                 <li>Java</li><li>Spring Boot</li><li>Camunda BPMN</li><li>SQL</li><li>Azure</li><li>Kubernetes</li><li>Git</li><li>Jira</li><li>Confluence</li>
               </ul>
-            </article>
+            </div>
           </li>
 
-          <li class="timeline__item reveal">
-            <div class="timeline__meta mono">
+          <li class="index__row reveal">
+            <div class="index__meta label">
               <span data-i18n="experience.synergia.date">Nov 2025 — Present</span>
-              <span class="timeline__place" data-i18n="common.seville">Seville, Spain</span>
+              <span class="muted" data-i18n="common.seville">Seville, Spain</span>
             </div>
-            <article class="card">
-              <h3 class="card__title"><span data-i18n="experience.synergia.role">Graduate Research Assistant</span> <span class="at">@ SynergIA Laboratory</span></h3>
-              <p class="card__sub mono">Universidad Pablo de Olavide</p>
+            <div class="index__body">
+              <h3 class="index__title"><span data-i18n="experience.synergia.role">Graduate Research Assistant</span> <span class="at">— SynergIA Laboratory</span></h3>
+              <p class="index__sub label">Universidad Pablo de Olavide</p>
               <p data-i18n="experience.synergia.desc">Research in Artificial Intelligence and High-Performance Computing on the CICA Hércules supercomputer (Slurm), spatial transcriptomics (TCGA-BRCA, 10x Xenium) and medical / histological image analysis — laying the groundwork for a PhD.</p>
-              <ul class="tags" aria-label="Technologies">
+              <ul class="dotlist label" aria-label="Technologies">
                 <li>HPC</li><li>Slurm</li><li>CICA Hércules</li><li>PyTorch</li><li>TCGA-BRCA</li><li>10x Xenium</li><li data-i18n="experience.synergia.tag">Medical imaging</li>
               </ul>
-            </article>
+            </div>
           </li>
         </ol>
       </div>
@@ -224,169 +245,178 @@
     <section class="section" id="education" aria-labelledby="education-title">
       <div class="container">
         <header class="section__head reveal">
-          <span class="section__index mono">02</span>
+          <p class="label section__index">§ 02</p>
           <h2 id="education-title" data-i18n="education.title">Education</h2>
         </header>
 
-        <div class="edu-grid">
-          <article class="card edu reveal">
-            <p class="edu__years mono">2026 — 2027</p>
-            <h3 class="card__title" data-i18n="education.msc.title">M.Sc. in Data Science &amp; Artificial Intelligence</h3>
-            <p class="card__sub" data-i18n="education.msc.original"><em>Máster Universitario en Ingeniería y Ciencia de Datos</em></p>
-            <p class="edu__school mono">Universidad Europea de Madrid</p>
-          </article>
-
-          <article class="card edu edu--featured reveal">
-            <p class="edu__years mono">2021 — 2026</p>
-            <h3 class="card__title" data-i18n="education.bsc.title">B.Sc. in Computer Engineering (Information Systems)</h3>
-            <p class="card__sub" data-i18n="education.bsc.original"><em>Grado en Ingeniería Informática</em></p>
-            <p class="edu__school mono">Universidad Pablo de Olavide</p>
-            <div class="edu__thesis">
-              <p class="edu__badge mono"><span data-i18n="education.bsc.badge">Bachelor’s Thesis</span> · <strong>10/10</strong> <span data-i18n="education.bsc.honors">With Honors</span></p>
-              <p data-i18n="education.bsc.thesis">Accelerating AI algorithms in bioinformatics through HPC: extension of the Python library <code>bioScience</code> with parallel CPU / GPU implementations of the BiBit and BCCA biclustering algorithms.</p>
+        <ol class="index">
+          <li class="index__row reveal">
+            <div class="index__meta label">
+              <span>2026 — 2027</span>
+              <span class="muted">Madrid, ES</span>
             </div>
-          </article>
+            <div class="index__body">
+              <h3 class="index__title" data-i18n="education.msc.title">M.Sc. in Data Science &amp; Artificial Intelligence</h3>
+              <p class="index__sub" data-i18n="education.msc.original"><em>Máster Universitario en Ingeniería y Ciencia de Datos</em></p>
+              <p class="label">Universidad Europea de Madrid</p>
+            </div>
+          </li>
 
-          <article class="card edu reveal">
-            <p class="edu__years mono">2024 — 2025</p>
-            <h3 class="card__title" data-i18n="education.lut.title">Exchange · Bachelor of Engineering in Computer Software Engineering</h3>
-            <p class="edu__school mono">LUT University · Lappeenranta, Finland 🇫🇮</p>
-          </article>
-        </div>
+          <li class="index__row index__row--highlight reveal">
+            <div class="index__meta label">
+              <span>2021 — 2026</span>
+              <span class="muted">Seville, ES</span>
+            </div>
+            <div class="index__body">
+              <h3 class="index__title" data-i18n="education.bsc.title">B.Sc. in Computer Engineering (Information Systems)</h3>
+              <p class="index__sub" data-i18n="education.bsc.original"><em>Grado en Ingeniería Informática</em></p>
+              <p class="label">Universidad Pablo de Olavide</p>
+              <div class="thesis">
+                <p class="thesis__badge label"><span data-i18n="education.bsc.badge">Bachelor’s Thesis</span> <span class="badge badge--copper">10/10 · <span data-i18n="education.bsc.honors">With Honors</span></span></p>
+                <p data-i18n="education.bsc.thesis">Accelerating AI algorithms in bioinformatics through HPC: extension of the Python library <code>bioScience</code> with parallel CPU / GPU implementations of the BiBit and BCCA biclustering algorithms.</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="index__row reveal">
+            <div class="index__meta label">
+              <span>2024 — 2025</span>
+              <span class="muted">Lappeenranta, FI</span>
+            </div>
+            <div class="index__body">
+              <h3 class="index__title" data-i18n="education.lut.title">Exchange · Bachelor of Engineering in Computer Software Engineering</h3>
+              <p class="label">LUT University · Finland</p>
+            </div>
+          </li>
+        </ol>
       </div>
     </section>
 
-    <!-- ============================== TALKS & COMMUNITY ============================== -->
-    <section class="section" id="talks" aria-labelledby="talks-title">
+    <!-- ============================== WORK: TALK + RESEARCH + COMMUNITY ============================== -->
+    <section class="section" id="work" aria-labelledby="work-title">
       <div class="container">
         <header class="section__head reveal">
-          <span class="section__index mono">03</span>
-          <h2 id="talks-title" data-i18n="talks.title">Talks, Community &amp; Leadership</h2>
+          <p class="label section__index">§ 03</p>
+          <h2 id="work-title" data-i18n="projects.title">Featured Work &amp; Research</h2>
         </header>
 
-        <article class="talk reveal">
-          <figure class="talk__media">
-            <img src="./assets/img/pycon-2026.jpg" width="1350" height="1800" loading="lazy" decoding="async"
-                 alt="Pablo Oca Galeano's red speaker badge at PyConES 2026 in Barcelona, hanging in a cloister courtyard"
-                 data-i18n-attr="alt:talks.pycon.alt" />
+        <!-- Featured talk -->
+        <article class="talk reveal" id="talk">
+          <figure class="talk__figure">
+            <div class="talk__frame">
+              <img src="./assets/img/pycon-2026.jpg" width="1350" height="1800" loading="lazy" decoding="async"
+                   alt="Pablo Oca Galeano's red speaker badge at PyConES 2026 in Barcelona, hanging in a cloister courtyard"
+                   data-i18n-attr="alt:talks.pycon.alt" />
+            </div>
+            <figcaption class="label">FIG 01. BARCELONA — PYCONES 2026</figcaption>
           </figure>
+
           <div class="talk__body">
-            <p class="eyebrow mono"><span class="pill" data-i18n="talks.pycon.kicker">Speaker</span> PyConES 2026 · Barcelona</p>
-            <h3 class="talk__title" lang="es">Más allá del Global Interpreter Lock: Exprimiendo algoritmos genómicos con Numba, Cython y CUDA</h3>
+            <p class="label talk__kicker"><span class="badge badge--accent" data-i18n="talks.featured">Featured talk</span> <span data-i18n="talks.pycon.kicker">Speaker</span> · PyConES 2026</p>
+            <h3 class="talk__title" lang="es">Más allá del Global Interpreter Lock: <em>Exprimiendo algoritmos genómicos con Numba, Cython y CUDA</em></h3>
             <p class="talk__subtitle" data-i18n="talks.pycon.subtitle">Beyond the Global Interpreter Lock: squeezing genomic algorithms with Numba, Cython and CUDA.</p>
             <p data-i18n="talks.pycon.desc">How to escape Python’s GIL to accelerate real bioinformatics workloads — biclustering on gene-expression matrices — moving from pure Python to JIT compilation, native extensions and GPU kernels, with reproducible benchmarks.</p>
-            <ul class="tags" aria-label="Technologies">
-              <li>Python</li><li>Numba</li><li>Cython</li><li>CUDA</li><li>OpenMP</li><li>Genomics</li>
-            </ul>
-            <a class="btn btn--primary" href="https://github.com/Pablooca/pycon-es-2026-mas-alla-del-gil" target="_blank" rel="noopener noreferrer">
+            <dl class="talk__specs">
+              <div><dt class="label">Stack</dt><dd class="label">Numba · Cython · CUDA</dd></div>
+              <div><dt class="label" data-i18n="talks.domain">Domain</dt><dd class="label" data-i18n="talks.domainValue">Genomics · Biclustering</dd></div>
+            </dl>
+            <a class="btn btn--solid" href="https://github.com/Pablooca/pycon-es-2026-mas-alla-del-gil" target="_blank" rel="noopener noreferrer">
               <svg class="icon icon--fill" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12.3c0 5.2 3.3 9.6 7.9 11.2.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.6-3.9-1.6-.5-1.4-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.5-2.7 5.5-5.3 5.8.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6a11.8 11.8 0 0 0 7.9-11.2A11.5 11.5 0 0 0 12 .5z"/></svg>
               <span data-i18n="talks.pycon.cta">Slides &amp; code on GitHub</span>
             </a>
           </div>
         </article>
 
-        <div class="community-grid">
-          <article class="card reveal">
-            <p class="edu__years mono" data-i18n="talks.pyes.date">Since Nov 2026</p>
-            <h3 class="card__title" data-i18n="talks.pyes.title">Member of Python España</h3>
-            <p data-i18n="talks.pyes.desc">Part of the Spanish Python community, supporting events, knowledge sharing and open-source culture.</p>
-          </article>
-          <article class="card reveal">
-            <p class="edu__years mono">2024 — 2026</p>
-            <h3 class="card__title" data-i18n="talks.esoliupo.title">President of ESOLIUPO</h3>
-            <p class="card__sub" data-i18n="talks.esoliupo.sub">Free Software Students’ Association, Universidad Pablo de Olavide</p>
-            <p data-i18n="talks.esoliupo.desc">Organised the 9th and 10th editions of the <em>Jornadas Ingenieros en la UPO</em> and coordinated hands-on technical workshops.</p>
-            <ul class="tags" aria-label="Workshops">
-              <li>Docker</li><li>Git / GitHub</li><li data-i18n="talks.esoliupo.tagSec">Cybersecurity</li><li>Power BI</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================== PROJECTS ============================== -->
-    <section class="section" id="projects" aria-labelledby="projects-title">
-      <div class="container">
-        <header class="section__head reveal">
-          <span class="section__index mono">04</span>
-          <h2 id="projects-title" data-i18n="projects.title">Featured Work &amp; Research</h2>
-        </header>
-
-        <div class="projects-grid">
-          <a class="project card reveal" href="https://github.com/Pablooca/pycon-es-2026-mas-alla-del-gil" target="_blank" rel="noopener noreferrer">
-            <div class="project__top">
-              <span class="project__badge mono" data-i18n="projects.pycon.badge">Talk · PyConES 2026</span>
-              <svg class="icon project__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>
+        <!-- Research cards -->
+        <div class="research">
+          <a class="rcard reveal" href="https://github.com/Pablooca/bioscience" target="_blank" rel="noopener noreferrer">
+            <div class="rcard__top label">
+              <span>01 // <span data-i18n="projects.bioscience.kind">Thesis</span></span>
+              <span class="badge badge--copper" data-i18n="projects.bioscience.badge">B.Sc. Thesis • 10/10</span>
             </div>
-            <h3 class="card__title" data-i18n="projects.pycon.title">PyConES 2026: Bypassing the Python GIL for Genomic Algorithms</h3>
-            <p data-i18n="projects.pycon.desc">Slides, code and reproducible benchmarks from my PyConES 2026 talk: escaping the Global Interpreter Lock to accelerate genomic biclustering with Numba, Cython and CUDA.</p>
-            <ul class="tags">
-              <li>Python</li><li>Numba</li><li>Cython</li><li>CUDA</li><li data-i18n="projects.tag.benchmarks">Benchmarks</li>
-            </ul>
-          </a>
-
-          <a class="project card reveal" href="https://github.com/Pablooca/bioscience" target="_blank" rel="noopener noreferrer">
-            <div class="project__top">
-              <span class="project__badge project__badge--ok mono" data-i18n="projects.bioscience.badge">B.Sc. Thesis • 10/10</span>
-              <svg class="icon project__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>
-            </div>
-            <h3 class="card__title" data-i18n="projects.bioscience.title">HPC Acceleration for Bioinformatics (<code>bioScience</code>)</h3>
+            <h3 class="rcard__title" data-i18n="projects.bioscience.title">HPC Acceleration for Bioinformatics (<code>bioScience</code>)</h3>
             <p data-i18n="projects.bioscience.desc">Parallel CPU / GPU implementations of the BiBit and BCCA biclustering algorithms within the Python library <code>bioScience</code>, using Numba, Cython, OpenMP and CUDA to accelerate gene-expression analysis.</p>
-            <ul class="tags">
+            <ul class="dotlist label">
               <li>Numba</li><li>Cython</li><li>OpenMP</li><li>CUDA</li><li>Python</li>
             </ul>
+            <span class="rcard__link label">github.com/Pablooca/bioscience ↗</span>
           </a>
 
-          <article class="project card reveal">
-            <div class="project__top">
-              <span class="project__badge project__badge--progress mono"><span class="project__pulse" aria-hidden="true"></span><span data-i18n="projects.openbsi.badge">In Progress</span></span>
+          <article class="rcard reveal">
+            <div class="rcard__top label">
+              <span>02 // <span data-i18n="projects.openbsi.badge">In Progress</span></span>
+              <span class="badge badge--progress"><span class="pulse" aria-hidden="true"></span><span data-i18n="projects.openbsi.status">Active research</span></span>
             </div>
-            <h3 class="card__title" data-i18n="projects.openbsi.title">OpenBSI &amp; Spatial Transcriptomics Pipeline</h3>
+            <h3 class="rcard__title" data-i18n="projects.openbsi.title">OpenBSI &amp; Spatial Transcriptomics Pipeline</h3>
             <p data-i18n="projects.openbsi.desc">Ongoing biomedical AI and high-performance computing research at the SynergIA Laboratory (UPO). Developing automated deep learning pipelines for bone scintigraphy metastasis quantification (OpenBSI) alongside whole-slide histological image (WSI) preprocessing and spatial transcriptomics integration (TCGA-BRCA, 10x Xenium) executed on the CICA Hércules supercomputer via Slurm.</p>
-            <ul class="tags">
+            <ul class="dotlist label">
               <li>PyTorch</li><li>OpenCV</li><li data-i18n="projects.openbsi.tag">Spatial Transcriptomics</li><li>WSI</li><li>HPC / Slurm</li>
             </ul>
+            <span class="rcard__link label muted">SynergIA Lab · UPO</span>
           </article>
         </div>
 
-        <p class="projects__more reveal">
-          <a href="https://github.com/Pablooca" target="_blank" rel="noopener noreferrer" class="link-arrow mono">
-            <span data-i18n="projects.more">More on github.com/Pablooca</span> →
+        <p class="more reveal">
+          <a href="https://github.com/Pablooca" target="_blank" rel="noopener noreferrer" class="text-link label">
+            <span data-i18n="projects.more">More on github.com/Pablooca</span> ↗
           </a>
         </p>
+
+        <!-- Community -->
+        <h3 class="subhead label reveal" data-i18n="community.title">Community &amp; Leadership</h3>
+        <ol class="index index--compact">
+          <li class="index__row reveal">
+            <div class="index__meta label"><span data-i18n="talks.pyes.date">Since Nov 2026</span></div>
+            <div class="index__body">
+              <h4 class="index__title" data-i18n="talks.pyes.title">Member of Python España</h4>
+              <p data-i18n="talks.pyes.desc">Part of the Spanish Python community, supporting events, knowledge sharing and open-source culture.</p>
+            </div>
+          </li>
+          <li class="index__row reveal">
+            <div class="index__meta label"><span>2024 — 2026</span></div>
+            <div class="index__body">
+              <h4 class="index__title" data-i18n="talks.esoliupo.title">President of ESOLIUPO</h4>
+              <p class="index__sub label" data-i18n="talks.esoliupo.sub">Free Software Students’ Association, Universidad Pablo de Olavide</p>
+              <p data-i18n="talks.esoliupo.desc">Organised the 9th and 10th editions of the <em>Jornadas Ingenieros en la UPO</em> and coordinated hands-on technical workshops.</p>
+              <ul class="dotlist label" aria-label="Workshops">
+                <li>Docker</li><li>Git / GitHub</li><li data-i18n="talks.esoliupo.tagSec">Cybersecurity</li><li>Power BI</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
       </div>
     </section>
 
-    <!-- ============================== STACK ============================== -->
+    <!-- ============================== STACK MATRIX ============================== -->
     <section class="section" id="stack" aria-labelledby="stack-title">
       <div class="container">
         <header class="section__head reveal">
-          <span class="section__index mono">05</span>
+          <p class="label section__index">§ 04</p>
           <h2 id="stack-title" data-i18n="stack.title">Tech Stack</h2>
         </header>
 
-        <div class="stack-grid">
-          <div class="stack card reveal">
-            <h3 class="stack__title mono"><span class="stack__dot" aria-hidden="true"></span><span data-i18n="stack.languages">Languages</span></h3>
-            <ul class="tags tags--lg">
+        <div class="matrix reveal">
+          <div class="matrix__col">
+            <h3 class="matrix__head label"><span class="matrix__id">A</span><span data-i18n="stack.languages">Languages</span></h3>
+            <ul class="matrix__list">
               <li>Python</li><li>Java</li><li>C / C++</li><li>SQL</li><li>Bash</li>
             </ul>
           </div>
-          <div class="stack card reveal">
-            <h3 class="stack__title mono"><span class="stack__dot" aria-hidden="true"></span>AI &amp; HPC</h3>
-            <ul class="tags tags--lg">
+          <div class="matrix__col">
+            <h3 class="matrix__head label"><span class="matrix__id">B</span>AI &amp; HPC</h3>
+            <ul class="matrix__list">
               <li>PyTorch</li><li>Numba</li><li>Cython</li><li>CUDA</li><li>OpenMP</li><li>SciPy</li><li>Pandas</li><li>Slurm</li>
             </ul>
           </div>
-          <div class="stack card reveal">
-            <h3 class="stack__title mono"><span class="stack__dot" aria-hidden="true"></span><span data-i18n="stack.backend">Backend &amp; Data Engineering</span></h3>
-            <ul class="tags tags--lg">
+          <div class="matrix__col">
+            <h3 class="matrix__head label"><span class="matrix__id">C</span><span data-i18n="stack.backend">Backend &amp; Data Engineering</span></h3>
+            <ul class="matrix__list">
               <li>Spring Boot</li><li>FastAPI</li><li>Apache Kafka</li><li>PySpark</li><li>Camunda BPMN</li><li>PostgreSQL / PostGIS</li><li>MongoDB</li><li>Redis</li><li>Celery</li>
             </ul>
           </div>
-          <div class="stack card reveal">
-            <h3 class="stack__title mono"><span class="stack__dot" aria-hidden="true"></span>Cloud &amp; DevOps</h3>
-            <ul class="tags tags--lg">
+          <div class="matrix__col">
+            <h3 class="matrix__head label"><span class="matrix__id">D</span>Cloud &amp; DevOps</h3>
+            <ul class="matrix__list">
               <li>Docker</li><li>Kubernetes</li><li>Azure</li><li>AWS EC2</li><li>Git / GitHub Actions</li><li>Linux</li>
             </ul>
           </div>
@@ -394,67 +424,69 @@
       </div>
     </section>
 
-    <!-- ============================== BEYOND THE CODE ============================== -->
+    <!-- ============================== BEYOND THE CODE (editorial archive) ============================== -->
     <section class="section" id="beyond" aria-labelledby="beyond-title">
       <div class="container">
         <header class="section__head reveal">
-          <span class="section__index mono">06</span>
-          <h2 id="beyond-title" data-i18n="beyond.title">Beyond the Code</h2>
+          <p class="label section__index">§ 05</p>
+          <div>
+            <h2 id="beyond-title" data-i18n="beyond.title">Beyond the Code</h2>
+            <p class="section__intro" data-i18n="beyond.intro">International mindset, resilience and discipline — the same traits that make long benchmarks and long distances worth it.</p>
+          </div>
         </header>
-        <p class="section__intro reveal" data-i18n="beyond.intro">International mindset, resilience and discipline — the same traits that make long benchmarks and long distances worth it.</p>
 
-        <div class="bento">
-          <!-- Finland: bench -->
-          <figure class="bento__tile bento__tile--photo bento__finland reveal">
-            <img src="./assets/img/lappeenranta-bench.jpg" width="1350" height="1800" loading="lazy" decoding="async"
-                 alt="Pablo sitting on a white bench under golden autumn trees in Lappeenranta, Finland"
-                 data-i18n-attr="alt:beyond.finland.alt" />
-            <figcaption class="bento__caption">
-              <span class="pill mono">Lappeenranta · FI</span>
-              <strong data-i18n="beyond.finland.title">A year in Finland</strong>
-              <span data-i18n="beyond.finland.desc">Exchange at LUT University: Nordic engineering culture, long autumns and longer winters.</span>
-            </figcaption>
+        <div class="archive">
+          <figure class="archive__fig reveal">
+            <div class="archive__frame">
+              <img src="./assets/img/lappeenranta-bench.jpg" width="1350" height="1800" loading="lazy" decoding="async"
+                   alt="Pablo sitting on a white bench under golden autumn trees in Lappeenranta, Finland"
+                   data-i18n-attr="alt:beyond.finland.alt" />
+            </div>
+            <figcaption class="label">FIG 02 — <span data-i18n="beyond.archive.finland">Archive // Finland 2024–2025</span></figcaption>
           </figure>
 
-          <!-- Helsinki half marathon -->
-          <div class="bento__tile bento__stat reveal">
-            <span class="mono bento__label" data-i18n="beyond.hm.label">Helsinki Half Marathon</span>
-            <p class="bento__number">21.1<span class="mono">km</span></p>
-            <p data-i18n="beyond.hm.desc">Finished in Helsinki during my time in Finland.</p>
+          <figure class="archive__fig reveal">
+            <div class="archive__frame">
+              <img src="./assets/img/lappeenranta-sign.jpg" width="1199" height="1800" loading="lazy" decoding="async"
+                   alt="Film-style photo of Pablo holding a Lappeenranta street sign indoors"
+                   data-i18n-attr="alt:beyond.sign.alt" />
+            </div>
+            <figcaption class="label">FIG 03 — <span data-i18n="beyond.sign.caption">Souvenir from Lappeenranta</span></figcaption>
+          </figure>
+
+          <div class="archive__note reveal">
+            <p class="label archive__place">Lappeenranta · Helsinki, FI</p>
+            <h3 data-i18n="beyond.finland.title">A year in Finland</h3>
+            <p data-i18n="beyond.finland.desc">Exchange at LUT University: Nordic engineering culture, long autumns and longer winters.</p>
+            <div class="metric">
+              <p class="metric__value">21.1<span>km</span></p>
+              <p class="label" data-i18n="beyond.hm.label">Helsinki Half Marathon</p>
+              <p class="metric__desc" data-i18n="beyond.hm.desc">Finished in Helsinki during my time in Finland.</p>
+            </div>
           </div>
 
-          <!-- Finland: sign -->
-          <figure class="bento__tile bento__tile--photo bento__sign reveal">
-            <img src="./assets/img/lappeenranta-sign.jpg" width="1199" height="1800" loading="lazy" decoding="async"
-                 alt="Film-style photo of Pablo holding a Lappeenranta street sign indoors"
-                 data-i18n-attr="alt:beyond.sign.alt" />
-            <figcaption class="bento__caption bento__caption--min">
-              <span class="pill mono" data-i18n="beyond.sign.caption">Souvenir from Lappeenranta</span>
-            </figcaption>
-          </figure>
-
-          <!-- Camino de Santiago -->
-          <figure class="bento__tile bento__tile--photo bento__camino reveal">
-            <img src="./assets/img/obradoiro-2026.jpg" width="1350" height="1800" loading="lazy" decoding="async"
-                 alt="Pablo standing in a rain-soaked Praza do Obradoiro facing Santiago de Compostela Cathedral, 2026"
-                 data-i18n-attr="alt:beyond.camino.alt" />
-            <figcaption class="bento__caption">
-              <span class="pill mono">Sarria → Obradoiro</span>
-              <strong data-i18n="beyond.camino.title">Camino de Santiago</strong>
-              <span data-i18n="beyond.camino.desc">Completed several times, from Sarria to the Praza do Obradoiro — rain or shine.</span>
-            </figcaption>
-          </figure>
-
-          <!-- Camino stat -->
-          <div class="bento__tile bento__stat reveal">
-            <span class="mono bento__label" data-i18n="beyond.caminoStat.label">Per Camino</span>
-            <p class="bento__number">~115<span class="mono">km</span></p>
-            <p data-i18n="beyond.caminoStat.desc">On foot, stage after stage. Consistency beats intensity.</p>
+          <div class="archive__note reveal">
+            <p class="label archive__place">Sarria → Obradoiro</p>
+            <h3 data-i18n="beyond.camino.title">Camino de Santiago</h3>
+            <p data-i18n="beyond.camino.desc">Completed several times, from Sarria to the Praza do Obradoiro — rain or shine.</p>
+            <div class="metric">
+              <p class="metric__value">~115<span>km</span></p>
+              <p class="label" data-i18n="beyond.caminoStat.label">Per Camino</p>
+              <p class="metric__desc" data-i18n="beyond.caminoStat.desc">On foot, stage after stage. Consistency beats intensity.</p>
+            </div>
           </div>
 
-          <!-- Strategy & running -->
-          <div class="bento__tile bento__text reveal">
-            <span class="mono bento__label" data-i18n="beyond.compete.label">Competitive mindset</span>
+          <figure class="archive__fig reveal">
+            <div class="archive__frame">
+              <img src="./assets/img/obradoiro-2026.jpg" width="1350" height="1800" loading="lazy" decoding="async"
+                   alt="Pablo standing in a rain-soaked Praza do Obradoiro facing Santiago de Compostela Cathedral, 2026"
+                   data-i18n-attr="alt:beyond.camino.alt" />
+            </div>
+            <figcaption class="label">FIG 04 — <span data-i18n="beyond.archive.camino">Archive // Camino de Santiago</span></figcaption>
+          </figure>
+
+          <div class="archive__note archive__note--accent reveal">
+            <p class="label archive__place" data-i18n="beyond.compete.label">Competitive mindset</p>
             <h3 data-i18n="beyond.compete.title">Strategy &amp; long-distance running</h3>
             <p data-i18n="beyond.compete.desc">I enjoy strategy games and distance running: planning ahead, managing resources and pacing effort — the same way I approach engineering problems.</p>
           </div>
@@ -464,20 +496,24 @@
 
     <!-- ============================== CONTACT ============================== -->
     <section class="section contact" id="contact" aria-labelledby="contact-title">
-      <div class="container contact__inner reveal">
-        <h2 id="contact-title" data-i18n="contact.title">Let’s build something fast.</h2>
-        <p data-i18n="contact.desc">Open to conversations about software engineering, HPC, AI for biomedicine and opportunities in the Nordics.</p>
-        <div class="hero__ctas">
-          <a href="https://www.linkedin.com/in/pablo-oca/" class="btn btn--primary" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a href="https://github.com/Pablooca" class="btn btn--ghost" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <div class="container contact__grid reveal">
+        <p class="label section__index">§ 06</p>
+        <div>
+          <h2 id="contact-title" data-i18n="contact.title">Let’s build something fast.</h2>
+          <p data-i18n="contact.desc">Open to conversations about software engineering, HPC, AI for biomedicine and opportunities in the Nordics.</p>
+          <div class="hero__actions">
+            <a href="https://www.linkedin.com/in/pablo-oca/" class="btn btn--solid" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+            <a href="https://github.com/Pablooca" class="btn btn--line" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container footer__inner mono">
+    <div class="container footer__inner label">
       <span>© <span id="year">2026</span> Pablo Oca Galeano</span>
+      <span>37.39° N, 5.98° W — 61.06° N, 28.19° E</span>
       <span data-i18n="footer.built">Built with HTML, CSS &amp; vanilla JS · Hosted on GitHub Pages</span>
     </div>
   </footer>
