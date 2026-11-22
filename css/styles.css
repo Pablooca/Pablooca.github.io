@@ -762,3 +762,25 @@ a.rcard:hover { border-color: var(--accent); transform: translateY(-2px); }
   vertical-align: 0.12em;
   color: var(--accent);
 }
+
+/* Wide research card (Personal Hub) */
+.rcard--wide { grid-column: 1 / -1; }
+.rcard__split {
+  display: grid;
+  grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+  gap: clamp(20px, 4vw, 48px);
+}
+.rcard__aside {
+  display: flex;
+  flex-direction: column;
+  padding-left: clamp(20px, 3vw, 32px);
+  border-left: 1px solid var(--line);
+}
+.rcard__aside .dotlist { margin-top: 4px; }
+.rcard__actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: auto; }
+.badge--live { border-color: color-mix(in srgb, var(--ok) 45%, transparent); background: color-mix(in srgb, var(--ok) 10%, transparent); color: var(--ok); }
+
+@media (max-width: 720px) {
+  .rcard__split { grid-template-columns: minmax(0, 1fr); }
+  .rcard__aside { padding-left: 0; border-left: 0; padding-top: 16px; border-top: 1px dashed var(--line); }
+}
