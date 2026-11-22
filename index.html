@@ -309,57 +309,44 @@
       <div class="container">
         <header class="section__head reveal">
           <span class="section__index mono">04</span>
-          <h2 id="projects-title" data-i18n="projects.title">Featured Projects</h2>
+          <h2 id="projects-title" data-i18n="projects.title">Featured Work &amp; Research</h2>
         </header>
 
         <div class="projects-grid">
-          <a class="project card reveal" href="https://github.com/Pablooca" target="_blank" rel="noopener noreferrer">
+          <a class="project card reveal" href="https://github.com/Pablooca/pycon-es-2026-mas-alla-del-gil" target="_blank" rel="noopener noreferrer">
             <div class="project__top">
-              <span class="project__kind mono" data-i18n="projects.kind.realtime">Real-time · Simulation</span>
+              <span class="project__badge mono" data-i18n="projects.pycon.badge">Talk · PyConES 2026</span>
               <svg class="icon project__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>
             </div>
-            <h3 class="card__title">PitStrategy-X</h3>
-            <p data-i18n="projects.pitstrategy.desc">Open-source platform for real-time motorsport telemetry and race strategy driven by Monte Carlo simulations.</p>
+            <h3 class="card__title" data-i18n="projects.pycon.title">PyConES 2026: Bypassing the Python GIL for Genomic Algorithms</h3>
+            <p data-i18n="projects.pycon.desc">Slides, code and reproducible benchmarks from my PyConES 2026 talk: escaping the Global Interpreter Lock to accelerate genomic biclustering with Numba, Cython and CUDA.</p>
             <ul class="tags">
-              <li>Java</li><li>Python</li><li>Apache Kafka</li><li>PostgreSQL / PostGIS</li><li>Camunda BPMN</li>
-            </ul>
-          </a>
-
-          <a class="project card reveal" href="https://github.com/Pablooca" target="_blank" rel="noopener noreferrer">
-            <div class="project__top">
-              <span class="project__kind mono" data-i18n="projects.kind.data">Data Engineering</span>
-              <svg class="icon project__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>
-            </div>
-            <h3 class="card__title">FinStream-Analytics</h3>
-            <p data-i18n="projects.finstream.desc">Real-time financial data pipeline: event ingestion, stream processing and analytical storage.</p>
-            <ul class="tags">
-              <li>Java</li><li>Spring Boot</li><li>Kafka</li><li>PySpark</li><li>PostgreSQL</li>
+              <li>Python</li><li>Numba</li><li>Cython</li><li>CUDA</li><li data-i18n="projects.tag.benchmarks">Benchmarks</li>
             </ul>
           </a>
 
           <a class="project card reveal" href="https://github.com/Pablooca/bioscience" target="_blank" rel="noopener noreferrer">
             <div class="project__top">
-              <span class="project__kind mono" data-i18n="projects.kind.hpc">HPC · Genomics</span>
+              <span class="project__badge project__badge--ok mono" data-i18n="projects.bioscience.badge">B.Sc. Thesis • 10/10</span>
               <svg class="icon project__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>
             </div>
-            <h3 class="card__title">bioScience HPC Extensions</h3>
-            <p data-i18n="projects.bioscience.desc">Acceleration of biclustering algorithms for genomics with parallel CPU and GPU back-ends.</p>
+            <h3 class="card__title" data-i18n="projects.bioscience.title">HPC Acceleration for Bioinformatics (<code>bioScience</code>)</h3>
+            <p data-i18n="projects.bioscience.desc">Parallel CPU / GPU implementations of the BiBit and BCCA biclustering algorithms within the Python library <code>bioScience</code>, using Numba, Cython, OpenMP and CUDA to accelerate gene-expression analysis.</p>
             <ul class="tags">
               <li>Numba</li><li>Cython</li><li>OpenMP</li><li>CUDA</li><li>Python</li>
             </ul>
           </a>
 
-          <a class="project card reveal" href="https://github.com/Pablooca" target="_blank" rel="noopener noreferrer">
+          <article class="project card reveal">
             <div class="project__top">
-              <span class="project__kind mono" data-i18n="projects.kind.bio">AI · Biomedical imaging</span>
-              <svg class="icon project__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>
+              <span class="project__badge project__badge--progress mono"><span class="project__pulse" aria-hidden="true"></span><span data-i18n="projects.openbsi.badge">In Progress</span></span>
             </div>
-            <h3 class="card__title">OpenBSI / Spatial Transcriptomics Pipeline</h3>
-            <p data-i18n="projects.openbsi.desc">Processing of whole-slide histological images (WSI) and quantification in bone scintigraphy.</p>
+            <h3 class="card__title" data-i18n="projects.openbsi.title">OpenBSI &amp; Spatial Transcriptomics Pipeline</h3>
+            <p data-i18n="projects.openbsi.desc">Ongoing biomedical AI and high-performance computing research at the SynergIA Laboratory (UPO). Developing automated deep learning pipelines for bone scintigraphy metastasis quantification (OpenBSI) alongside whole-slide histological image (WSI) preprocessing and spatial transcriptomics integration (TCGA-BRCA, 10x Xenium) executed on the CICA Hércules supercomputer via Slurm.</p>
             <ul class="tags">
-              <li>Python</li><li>PyTorch</li><li>WSI</li><li data-i18n="projects.openbsi.tag">Spatial transcriptomics</li><li>Slurm</li>
+              <li>PyTorch</li><li>OpenCV</li><li data-i18n="projects.openbsi.tag">Spatial Transcriptomics</li><li>WSI</li><li>HPC / Slurm</li>
             </ul>
-          </a>
+          </article>
         </div>
 
         <p class="projects__more reveal">

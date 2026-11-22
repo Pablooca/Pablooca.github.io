@@ -36,6 +36,7 @@
   --accent-ink: #04121c;
   --accent-soft: rgba(125, 211, 252, 0.12);
   --ok: #4ade80;
+  --warn: #fbbf24;
   --grid-line: rgba(255, 255, 255, 0.035);
   --shadow: 0 1px 0 rgba(255, 255, 255, 0.03) inset, 0 20px 40px -24px rgba(0, 0, 0, 0.6);
   --nav-bg: rgba(10, 12, 16, 0.72);
@@ -56,6 +57,7 @@
   --accent-ink: #ffffff;
   --accent-soft: rgba(3, 105, 161, 0.08);
   --ok: #16a34a;
+  --warn: #b45309;
   --grid-line: rgba(12, 16, 23, 0.045);
   --shadow: 0 1px 2px rgba(12, 16, 23, 0.04), 0 16px 32px -24px rgba(12, 16, 23, 0.18);
   --nav-bg: rgba(247, 248, 250, 0.8);
@@ -520,17 +522,50 @@ strong { color: var(--text); font-weight: 600; }
 /* ---------- Projects ---------- */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 20px;
 }
 .project { display: flex; flex-direction: column; }
-.project:hover { border-color: var(--accent); transform: translateY(-3px); }
+a.project:hover { border-color: var(--accent); transform: translateY(-3px); }
 .project .tags { margin-top: auto; padding-top: 18px; }
 .project__top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px; }
 .project__kind { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-dim); }
 .project__arrow { color: var(--text-dim); transition: transform 0.25s var(--ease), color 0.25s var(--ease); }
-.project:hover .project__arrow { color: var(--accent); transform: translate(2px, -2px); }
-.project .card__title { font-size: 1.35rem; }
+a.project:hover .project__arrow { color: var(--accent); transform: translate(2px, -2px); }
+.project .card__title { font-size: 1.25rem; }
+.project__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--accent) 35%, transparent);
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+.project__badge--ok {
+  border-color: color-mix(in srgb, var(--ok) 40%, transparent);
+  background: color-mix(in srgb, var(--ok) 12%, transparent);
+  color: var(--ok);
+}
+.project__badge--progress {
+  border-color: color-mix(in srgb, var(--warn) 45%, transparent);
+  background: color-mix(in srgb, var(--warn) 12%, transparent);
+  color: var(--warn);
+}
+.project__pulse {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--warn);
+  animation: pulse-warn 2s infinite;
+}
+@keyframes pulse-warn {
+  0%, 100% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--warn) 50%, transparent); }
+  70% { box-shadow: 0 0 0 6px transparent; }
+}
 
 .projects__more { margin-top: 28px; text-align: right; }
 .link-arrow { font-size: 0.85rem; color: var(--text-muted); transition: color 0.2s var(--ease); }
@@ -678,6 +713,7 @@ strong { color: var(--text); font-weight: 600; }
   .nav__links a { padding: 12px; font-size: 1rem; }
 
   .talk { grid-template-columns: minmax(0, 1fr); }
+  .projects-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .talk__media img { aspect-ratio: 4 / 3; object-position: 50% 40%; }
 
   .bento {
