@@ -471,7 +471,8 @@ strong { color: var(--text); font-weight: 600; }
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 20px;
 }
-.edu--featured { grid-row: span 2; grid-column: 2; grid-row-start: 1; border-color: var(--line-strong); }
+.edu-grid > .edu:not(.edu--featured) { grid-column: 1; }
+.edu--featured { grid-column: 2; grid-row: 1 / span 2; border-color: var(--line-strong); }
 .edu__years { font-size: 0.78rem; color: var(--accent); margin-bottom: 12px; }
 .edu__school { font-size: 0.82rem; color: var(--text); margin-top: 8px; }
 .edu__thesis {
@@ -676,7 +677,7 @@ strong { color: var(--text); font-weight: 600; }
   .nav__links.is-open { opacity: 1; transform: none; visibility: visible; }
   .nav__links a { padding: 12px; font-size: 1rem; }
 
-  .talk { grid-template-columns: 1fr; }
+  .talk { grid-template-columns: minmax(0, 1fr); }
   .talk__media img { aspect-ratio: 4 / 3; object-position: 50% 40%; }
 
   .bento {
@@ -692,12 +693,12 @@ strong { color: var(--text); font-weight: 600; }
 
 @media (max-width: 760px) {
   .hero__stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .timeline__item { grid-template-columns: 1fr; gap: 10px; }
+  .timeline__item { grid-template-columns: minmax(0, 1fr); gap: 10px; }
   .timeline__meta { flex-direction: row; flex-wrap: wrap; gap: 4px 12px; padding-top: 0; }
   .edu-grid,
   .community-grid,
   .projects-grid,
-  .stack-grid { grid-template-columns: 1fr; }
+  .stack-grid { grid-template-columns: minmax(0, 1fr); }
   .edu--featured { grid-column: auto; grid-row: auto; }
   .projects__more { text-align: left; }
 }
@@ -707,7 +708,7 @@ strong { color: var(--text); font-weight: 600; }
   .hero__social { margin-left: 0; }
   .btn { height: 44px; padding: 0 16px; }
   .bento {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     grid-template-areas:
       "finland"
       "hm"
